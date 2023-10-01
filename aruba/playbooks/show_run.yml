@@ -1,0 +1,14 @@
+- name: Show running Configure
+  hosts: all
+#  collections:
+#    - arubanetworks.aoscx
+  gather_facts: false
+  tasks:
+    - name: Execute show run on the switch
+      arubanetworks.aoscx.aoscx_command:
+        commands: ['show run']
+      register: stdout
+
+    - name: Display show run output
+      ansible.builtin.debug:
+        var: stdout.stdout_lines
