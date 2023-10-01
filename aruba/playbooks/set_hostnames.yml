@@ -1,0 +1,8 @@
+- hosts: all
+  collections:
+    - arubanetworks.aoscx
+  gather_facts: false
+  tasks:
+    - name: Execute show run on the switch
+      aoscx_command:
+        commands: ['show run']

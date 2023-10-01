@@ -2,6 +2,8 @@
 
 ## Install Aruba galaxy collection
 `ansible-galaxy collection install arubanetworks.aoscx`
+`ansible-galaxy install arubanetworks.aoscx_role`
+`apt-get install curl openssl libcurl4-openssl-dev libssl-dev python3-dev` # required for Ubuntu
 
 ## Prepare switches for Ansible
 ```

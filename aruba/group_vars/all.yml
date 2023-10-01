@@ -1,6 +1,9 @@
 ansible_user: admin
+ansible_password: 1q2w!Q@W
 ansible_network_os: arubanetworks.aoscx.aoscx
-ansible_connection: arubanetworks.aoscx.aoscx
+ansible_connection: network_cli
+#ansible_network_os: aoscx
 ansible_aoscx_validate_certs: false
 ansible_aoscx_use_proxy: false
 ansible_acx_no_proxy: true
+#ansible_httpapi_use_ssl=True
