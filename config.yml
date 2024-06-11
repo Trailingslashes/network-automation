@@ -1,0 +1,18 @@
+---
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: "hosts.yml"
+    group_file: "groups.yml"
+    defaults_file: "defaults.yml"
+
+runner:
+  plugin: threaded # or serial
+  options:
+    num_workers: 10
+
+connection_options:
+  scrapli:
+    extras:
+      auth_strict_key: False
+      ssh_config_file: False

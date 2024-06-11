@@ -1,0 +1,12 @@
+---
+veos:
+  username: pynet
+  password: pynet
+  platform: arista_eos
+  data:
+    ntp_server: 1.2.3.4
+
+cx:
+  username: pynet-cx
+  password: pynetcx
+  platform: aruba_aoscx

@@ -1,5 +1,0 @@
-paramiko
-requests
-ansible-pylibssh
-ansible-lint
-pyaoscx>=2.5.0
