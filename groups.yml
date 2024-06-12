@@ -9,4 +9,4 @@ veos:
 cx:
   username: pynet-cx
   password: pynetcx
-  platform: aruba_aoscx
+  platform: aruba_osswitch
