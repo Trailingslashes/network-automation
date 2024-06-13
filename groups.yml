@@ -2,11 +2,15 @@
 veos:
   username: pynet
   password: pynet
-  platform: arista_eos
+  # scrapli_platform: arista_eos
+  # nornir_platform: eos
+  platform: eos
   data:
     ntp_server: 1.2.3.4
 
 cx:
   username: pynet-cx
   password: pynetcx
-  platform: aruba_osswitch
+  # scrapli_platform: aruba_aoscx
+  # nornir_platform: aoscx
+  platform: aoscx
