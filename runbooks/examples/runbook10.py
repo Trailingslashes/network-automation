@@ -12,7 +12,8 @@ def ping(task):
     # Ping the IP address 192.168.150.137 on each device
     task.run(task=napalm_ping, dest="192.168.150.137")
 
-# Execute the ping function across devices and store results
+# Execute the ping f
+# unction across devices and store results
 results = nr.run(task=ping)
 
 # Print the results of the ping
