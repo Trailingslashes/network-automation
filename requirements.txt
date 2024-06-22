@@ -1,0 +1,6 @@
+nornir
+nornir-netmiko
+nornir-napalm
+nornir-scrapli
+rich
+scrapli[genie]

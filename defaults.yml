@@ -8,3 +8,4 @@ connection_options:
     port: 22
     extras:
       auth_strict_key: False
+      auth_secondary: os.environ.get("SECONDARY_PASSWORD")

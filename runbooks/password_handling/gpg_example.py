@@ -7,6 +7,13 @@
 # gpg --decrypt enc.env.gpg
 # flush gpg cache
 # echo RELOADAGENT | gpg-connect-agent
+
+# gpg --decrypt passwords.gpg > passwords_decrypted
+# echo "NEW_LINE=new_value" >> passwords_decrypted
+# gpg --symmetric --cipher-algo AES256 --output passwords_new.gpg passwords_decrypted
+# mv passwords_new.gpg passwords.gpg
+# shred -u passwords_decrypted
+# echo RELOADAGENT | gpg-connect-agent
 import os
 
 from nornir import InitNornir
