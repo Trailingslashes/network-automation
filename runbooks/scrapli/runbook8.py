@@ -1,8 +1,13 @@
+import os
+
 from nornir import InitNornir
 from nornir_scrapli.tasks import send_commands
 from nornir_utils.plugins.functions import print_result
 
 nr = InitNornir(config_file="config.yml")
+
+nr.inventory.defaults.username = os.environ["DEFAULT_USERNAME"]
+nr.inventory.defaults.password = os.environ["DEFAULT_PASSWORD"]
 
 command_list = ["show ip int br", "show version", "show run"]
 
